@@ -40,7 +40,7 @@ type Marble struct {
 	ObjectType string        `json:"docType"` //field for couchdb
 	Id       string          `json:"id"`      //the fieldtags are needed to keep case from bouncing around
 	Color      string        `json:"color"`
-	Size       int           `json:"size"`    //size in mm of marble
+	Size       int           `json:"size"`    //size in mm of marble hhh hhhhh hkhj khkjh
 	Owner      OwnerRelation `json:"owner"`
 }
 
