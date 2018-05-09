@@ -70,7 +70,7 @@ app.use(cors());
 // ============================================================================================================================
 app.use(function (req, res, next) {
 	logger.debug('------------------------------------------ incoming request ------------------------------------------');
-	logger.debug('New ' + req.method + ' request for', req.url);
+	logger.debug('New request ' + req.method + ' request for', req.url);
 	req.bag = {};																	// create object for client exposed session data
 	req.bag.session = req.session;
 	next();
