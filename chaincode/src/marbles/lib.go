@@ -34,7 +34,7 @@ func get_marble(stub shim.ChaincodeStubInterface, id string) (Marble, error) {
 	var marble Marble
 	marbleAsBytes, err := stub.GetState(id)                  //getState retreives a key/value from the ledger
 	if err != nil {                                          //this seems to always succeed, even if key didn't exist
-		return marble, errors.New("Failed to find marble - " + id)
+		return marble, errors.New("Failed to find marble with given id- " + id)
 	}
 	json.Unmarshal(marbleAsBytes, &marble)                   //un stringify it aka JSON.parse()
 
